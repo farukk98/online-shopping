@@ -24,7 +24,7 @@ export default defineComponent({
 
 <script setup>
 import { computed } from 'vue'
-import { productsStore } from '@/stores/products'
+import { productsStore } from '../stores/products'
 import { useRoute, useRouter } from 'vue-router'
 
 const store = productsStore()
@@ -41,7 +41,7 @@ const selectedProduct = computed(() => {
 })
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .product {
   display: flex;
   margin-top: 50px;
@@ -50,4 +50,4 @@ const selectedProduct = computed(() => {
 .product-image {
   margin-right: 24px;
 }
-</style>
+</style> -->

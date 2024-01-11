@@ -24,8 +24,8 @@ export default defineComponent({
 
 <script setup>
 import { onMounted } from 'vue'
-import { productsStore } from '@/stores/products'
-import { useRouter } from 'vue-router'
+import { productsStore } from '../stores/products'
+
 
 const store = productsStore()
 const router = useRouter()
@@ -42,7 +42,7 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .products-list {
   display: flex;
   justify-content: space-between;
@@ -60,4 +60,4 @@ onMounted(async () => {
 .product img {
   width: 70%;
 }
-</style>
+</style> -->

@@ -3,7 +3,7 @@
     <button @click="router.push({ name: 'Catalog' })">Back to Catalog</button>
 
     <div v-if="!store.cart.length">
-      <p>Empty Cart...</p>
+      <p class="text-blue-400">Empty Cart...</p>
     </div>
     <div class="cart-items" v-else>
       <div class="cart-item" v-for="item in store.cart" :key="item.id">
@@ -27,7 +27,7 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { productsStore } from '@/stores/products'
+import { productsStore } from '../stores/products'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()

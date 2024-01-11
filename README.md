@@ -1,35 +1,44 @@
-# online-shop
+# Starter app for Vue + Vite + Tailwind (w/ Eslint & Prettier) projects
 
-This template should help get you started developing with Vue 3 in Vite.
+This is an extremely simple setup to develop Vue + Tailwind projects with everything you need to have a good development experience (ESlint + Prettier).
 
-## Recommended IDE Setup
+Dependencies included:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- vue
+- vite, vite-plugin-vue, vite-plugin-eslint
+- postcss (needed for Tailwind), tailwindcss, autoprefixer (needed for Tailwind), prettier-plugin-tailwindcss (needed for automatic class sorting for Tailwind w/ Prettier [https://tailwindcss.com/blog/automatic-class-sorting-with-prettier]).
+- eslint, eslint-plugin-vue, eslint-config-prettier (needed to avoid conflicts between eslint and prettier [https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/]).
 
-## Customize configuration
+Required plugins (must be installed via VSCode extensions):
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- ESLint
+- PostCSS Language Support
+- Prettier - Code formatter
+- Tailwind CSS IntelliSense
+- Vue Language Features (Volar)
 
-## Project Setup
+## Usage
 
-```sh
+Install required VSCode plugins
+
+Install dependencies:
+
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Run the app:
 
-```sh
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
+Add any config values to the **tailwind.config.js** file
 
-```sh
+To build once, run:
+
+```
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Enjoy! 😋
